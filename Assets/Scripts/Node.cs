@@ -49,7 +49,7 @@ public class Node : MonoBehaviour
     public void AddChild(Node child)
     {
         _childs.Add(child);
-        // TODO: ??????? ????????? ? ??????
+        // TODO: Transfer responsibility for drawing lines to the builder
         DrawLine(transform.position, child.transform.position);
     }
 
@@ -79,7 +79,7 @@ public class Node : MonoBehaviour
 
     private void UpdatePosition()
     {
-        // TODO: ???????????? ?????????? 
+        // TODO: Dynamic placement
         transform.position = new Vector2(Position * 2 - Layer, 4 - Layer * 2);
     }
 
